@@ -1,4 +1,4 @@
-import TextFileReader from "../../utils/readTextFile";
+import TextFileReader from "../../utils/TextFileReader";
 import SafeCracker from "./SafeCracker";
 
 const fileReader = new TextFileReader('day1/input.txt');
