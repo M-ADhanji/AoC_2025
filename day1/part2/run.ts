@@ -1,7 +1,9 @@
-import readTextFile from "../../utils/readTextFile";
+import TextFileReader from "../../utils/readTextFile";
 import SafeCracker from "./SafeCracker";
 
-const rawInstructions = readTextFile('day1/input.txt');
+const fileReader = new TextFileReader('day1/input.txt');
+
+const rawInstructions = fileReader.splitLines();
 const safeCracker = new SafeCracker({ rawInstructions, initialValue: 50 });
 
 safeCracker.executeInstructions();
