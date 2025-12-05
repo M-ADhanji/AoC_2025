@@ -11,4 +11,9 @@ export default class TextFileReader {
         const content: string = readFileSync(this.filePath, 'utf-8');
         return content.split('\n');
     }
+
+    public splitByComma(): string[] {
+        const content: string = readFileSync(this.filePath, 'utf-8');
+        return content.split(',');
+    }
 }
