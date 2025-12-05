@@ -1,5 +1,5 @@
 import TextFileReader from "../../utils/TextFileReader";
-import JoltCalculator from "./joltCalculator";
+import JoltCalculator from "./JoltCalculator";
 
 const fileReader = new TextFileReader('day3/input.txt');
 
