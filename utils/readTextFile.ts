@@ -1,8 +1,14 @@
 import { readFileSync } from 'fs';
 
-function readTextFile(filePath: string): string[] {
-    const content: string = readFileSync(filePath, 'utf-8');
-    return content.split('\n');
-}
+export default class TextFileReader {
+    private filePath: string;
 
-export default readTextFile;
+    constructor(filePath: string) {
+        this.filePath = filePath;
+    }
+
+    public splitLines(): string[] {
+        const content: string = readFileSync(this.filePath, 'utf-8');
+        return content.split('\n');
+    }
+}
