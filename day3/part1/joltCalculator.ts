@@ -1,8 +1,3 @@
-type firstJoltage = {
-  joltage: number;
-  poistion: number;
-}
-
 interface BatteryBankAnalysis {
   length: number;
   digits: {
