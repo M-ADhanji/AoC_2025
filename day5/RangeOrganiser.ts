@@ -19,7 +19,7 @@ export default class RangeOrganiser {
         const [startA, endA] = a.split('-').map(Number);
         const [startB, endB] = b.split('-').map(Number);
 
-        return endA !== endB ? startA - startB : endA - endB;
+        return startA !== startB ? startA - startB : endA - endB;
     });
   }
 }
