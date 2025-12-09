@@ -1,4 +1,4 @@
-import TextFileReader from "../../utils/textFileReader.ts";
+import TextFileReader from "../../utils/TextFileReader.ts";
 
 const fileReader = new TextFileReader('day6/input.txt');
 const worksheet = fileReader.splitLines();
